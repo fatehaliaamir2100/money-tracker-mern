@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; 
+  background-color: #17181F;
+  color: #ddd;
+  font-family: Arial, sans-serif; /* Added font-family */
+  /* margin: 0; Updated to remove default margin */
+}
+
+main {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 3rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 span {
+  font-size: 1rem;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #30313d; /* Updated background */
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+form div.basic {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+form div.detailed {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+form button {
+  width: 100%;
+  margin-top: 5px;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ddd;
+}
+
+div.transactions {
+  margin-top: 15px;
+}
+
+div.transaction {
+  justify-content: space-between;
+  padding: 5px 0;
+  border-top: 1px solid #30313d;
+  display:flex;
+}
+
+div.transaction:first-child {
+  border-top: 0
+}
+
+div.transaction div.name { /* Corrected class name */
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+div.transaction div.description { /* Corrected class name */
+  font-size: 0.7rem;
+  color: #888;
+  text-align: left;
+}
+
+div.right {
+  text-align: right;
+}
+
+div.price.green {
+  color: #1c1;
+  text-align: right;
+}
+
+div.price.red {
+  color: #c11;
+  text-align: right;
+}
+
+div.transaction div.date {
+  font-size: 0.7rem;
+  color: #888;
+}
